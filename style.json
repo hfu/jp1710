@@ -1152,18 +1152,12 @@
           "==",
           "$type",
           "Point"
-        ],
-        [
-          "==",
-          "rank",
-          1
         ]
       ],
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Klokantech Noto Sans Regular",
-          "Klokantech Noto Sans CJK Regular"
+          "NotoSansCJKjp-DemiLight"
         ],
         "visibility": "visible",
         "text-offset": [
