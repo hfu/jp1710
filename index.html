@@ -4,12 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jp1710</title>
-<link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css" />
-<script src="https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js"></script>
+<link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css" />
 <style>
 body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2511290-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-2511290-10');
+</script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js"></script>
 </head>
 <body>
 <div id='map'></div>
@@ -17,7 +24,8 @@ body { margin:0; padding:0; }
 //mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.0/mapbox-gl-rtl-text.js');
 var map = new mapboxgl.Map({
   container: 'map', style: 'style.json',
-  attributionControl: true, hash: true
+  attributionControl: true, hash: true,
+  localIdeographFontFamily: "'MS Gothic', 'Hiragino Kaku Gothic Pro', sans-serif"
 });
 map.addControl(new mapboxgl.NavigationControl());
 </script>
